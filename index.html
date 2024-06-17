@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First page</title>
+    <link rel="icon" type="image/icons8-favicon-24.png" href="/images/icons8-favicon-24.png">
+</head>
+<body>
+<p><a href="https://yandex.ru/images/search?from=tabbar&img_url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FgIZiLR7V7cc%2Fmaxresdefault.jpg&lr=37&pos=11&rpt=simage&text=фотография%20безумно%20можно%20быть%20первым%20djkrf"><img src="images/i.webp" alt="krytoi chuvak" style="float:left;margin: 7px 7px 7px 7px" ></a></p>
+    <p> <font size="6"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span style="color: aqua"> Assumenda deleniti inventore neque perspiciatis repellat. Assumenda autem consequatur esse</span>
+        harum perspiciatis quaerat vel. Accusamus, aliquam aperiam, assumenda atque autem corporis culpa delectus eaque eius esse eveniet expedita harum iusto libero magnam magni minus natus
+        neque nihil nulla quae quaerat quidem quisquam rem repellat sed sequi similique sunt temporibus, tenetur ullam ut vel voluptate. Accusamus aspernatur beatae distinctio dolor labore magni,
+        <span style="color: fuchsia">odio qui voluptatum. Magnam, modi quas! Assumenda esse expedita quae quibusdam veritatis. A, alias aliquam aliquid atque corporis enim illo incidunt libero</span>
+        nobis pariatur quasi soluta sunt ut veritatis vero. Blanditiis commodi dolores eveniet molestias nesciunt obcaecati omnis provident quaerat repellendus, sequi? Ab atque deleniti dolor fugiat,
+        laboriosam nostrum perferendis quas qui soluta? Amet aperiam asperiores eaque eos excepturi, hic ipsa, maiores neque nihil nisi quo rem, sapiente sit voluptas voluptates! Adipisci architecto
+        <span style="color: darkblue">consectetur consequatur corporis delectus dolore doloremque earum eligendi enim esse expedita facere libero maiores maxime necessitatibus neque nisi, nulla, odit</span>
+        omnis porro quis quisquam rem reprehenderit saepe similique soluta tenetur voluptates? Ab, accusantium, alias architecto dignissimos est itaque minus perferendis recusandae sequi soluta sunt voluptatum. Accusamus accusantium adipisci commodi cum debitis
+        <span style="color: crimson">deleniti eligendi enim est eum excepturi exercitationem illo impedit ipsum iste itaque laboriosam laborum molestias, necessitatibus nesciunt nisi obcaecati perferendis placeat quibusdam</span> quis quod reiciendis repellendus repudiandae sed suscipit tempore tenetur ut velit voluptate! Aliquam commodi consequuntur cum, dolor dolore ea et iure labore, molestias mollitia neque, nesciunt odio optio quaerat quisquam quo rem repudiandae veniam vero.</font></p>
+    <h1>Ссылки на Соц сети</h1>
+    <h3><p>Ссылка на
+        <a href="https://vk.com">Вконтакте</a></p>
+    <p>Ссылка на
+        <a href="https://www.youtube.com">Ютуб</a></p></h3>
+
+    <p><ol><li><a href="https://vk.com">Вконтакте</a></li>
+    <li><a href="https://www.youtube.com">Ютуб</a></li></ol></p>
+    <h3><font face="verdana">Первая курсовая работа</font></h3>
+    <h3><pre><b>
+    import spy
+    import re
+
+
+    style = input("Выберите вариант работы(напишите [з] для шифровки, букву [р] для расшифровки: ").upper()
+    if style not in ['З','Р', 'з', 'р']:
+    	print("Только зашифровать или расшифровать!!!!"); raise SystemExit    #завершение работы
+    Message = input("Сообщение для шифра: ").upper()
+    Key = input("Шифр-ключ: ").upper()
+    Message1 = re.sub("[^А-Яа-я]", "", Message)
+    Key1 = re.sub("[^А-Яа-я]", "", Key)
+    def specify(mode, message, key):
+    	key *= len(message) // len(key) + 1
+    	chipher_mes = ""
+
+    	for a, b in enumerate(message):
+    		if mode in ['З','з','зашифровать', 'Зашифровать']:
+    			chipher = ord(b) + ord(key[a])
+    		else:
+    			chipher = ord(b) - ord(key[a])
+
+    		chipher_mes += chr(chipher % 32 + ord('А'))       #если необходимо зашифровать на англ то вместо 32 ставим 26
+    	return chipher_mes
+    print("Зашифрованное сообщение:",specify(style, Message1, Key1))
+
+    </b></pre></h3>
+
+
+    <h1><mark>Запомни, только волк в цирке не выступает! </mark></h1>
+    <h1><del><mark><em>Если в дверь не постучаться, то ее никогда не откроют</em></mark></del></h1>
+    <b><mark>Это запомним --> A<sup>2</sup>+ B <sup>2</sup>= C <sup>2</sup></mark></b>
+    <p><b><mark><del>А вот это осуждаем: H <sub>2</sub>O девиз не наш, наш C <sub>2</sub>H <sub>5</sub>OH</del></mark></b></p>
+    <h1><u><b>Моя галерея:</b></u></h1>
+    <img src="images/1i.webp" alt="" style="float:left;margin: 10px 10px 10px 10px" ><img src="images/2i.webp" alt="" style="margin: 10px"><img
+        src="images/i.webp" alt="">
+
+
+</body>
+</html>
