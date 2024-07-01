@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Регистрация</title>
+</head>
+<body>
+<form>
+  <p><h3>Добро пожаловать в форму регистрации. </h3></p>
+  <p><h3>Введите следующие данные для входа:</h3></p>
+  <fieldset style="width: 100px">
+    <legend >Форма регистрации</legend>
+    <label for="login">Логин:</label><br><br>
+    <input type="text" name="login" id="login" required style="border-color: crimson"/><br>
+    <p>
+      <input type="checkbox" checked name="html5"/>HTML5
+    </p>
+    <p>
+      <input type="checkbox" checked name="Python"/>Python
+    </p>
+    <p>
+      <input type="checkbox" checked name="PHP"/>PHP
+    </p>
+    <p>
+      <input type="checkbox" checked name="JavaScript"/>JavaScript
+    </p>
+    <h2>Какого ты пола?</h2>
+    <p style="font-size: 15px">
+      <input type="radio" value="man" checked name="gender"/>Мужской
+    </p>
+    <p style="font-size: 15px">
+      <input type="radio" value="woman" checked name="gender"/>Жонский
+    </p>
+    <label for="phone">Телефонк:</label><br><br>
+    <input id="phone" name="phone" placeholder="+XXXXXXXXXXX" type="tel" pattern="\8\(\d{3}\)\d{3}-\d{2}-\d{2}$" style="border-color: crimson"  ><br><br>
+    <label for="email">Email: </label><br><br>
+    <input id="email" name="email" placeholder="example@gmail.com" type="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" style="border-color: crimson"/><br><br>
+    <label for="date"> Дата Рождения:</label><br><br>
+    <input type="date" id="date" name="date" required><br><br>
+    <p>Расскажите о себе (необязательно):</p>
+    <textarea name="comment" id="comment" placeholder="Немного о себе" cols="30" rows="7" maxlength="200"></textarea><br><br>
+    <label for="file">Выберите Аватарку(.png, необязательно:</label><br><br>
+    <input id="file" type="file" name="file" multiple><br><br>
+    <label for="password">Пароль:</label><br><br>
+    <input type="password" name="password" id="password" required style="border-color: crimson"/><br><br>
+    <label for="password1">Повторите пароль :</label><br><br>
+    <input type="password" name="password" id="password1" required style="border-color: crimson"/><br><br>
+    <button type="reset">Сбросить</button>
+    <button type="submit" formmethod="get" formaction="2.html">Войти</button><br><br>
+    <p style="font-size: 12px">Поля помеченные красным обязательны!!!!</p>
+  </fieldset>
+
+
+</form>
+</body>
+</html>
